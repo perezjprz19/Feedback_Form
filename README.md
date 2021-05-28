@@ -1,2 +1,2 @@
 # Feedback_Form
-Feedback Form for Restaurant
+Feedback Form for restaurant
