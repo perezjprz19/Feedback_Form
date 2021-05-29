@@ -1,95 +1,96 @@
 <!DOCTYPE html>
 
 <html lang = "en">
-	<header> 
+	<head> 
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
 		<link rel="stylesheet" href="C:\Users\Jessica\Desktop\PersonalCodingProjects\SurveyForm.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
-		<meta charset="utf-8">
-	</header>
-	
-	<head>
-		<title>Lazzarito's Italian Cuisine</title>
-	</head>
 
-	<main>
-		<h1 id = "title"> Lazzarito's Italian Cuisine Survey Form </h1>
-		<p id = "description">Thank you for your visit. Please complete the following form to let us know how we did. </p>
-	
-		<form id = "survey-form">
+		<meta charset="utf-8">
+	</head>
+		<body>
+			<header>
+				<title>Lazzaro's Italian Bistro</title>
+				<img src = "C:\Users\Jessica\Desktop\PersonalCodingProjects\Images\header-image.jpeg">
+			</header>
+			
+			<main>
+			<h1 id = "title"> Contact US </h1>
+			<p id = "description">Thank you for your visit. Please complete the following form to let us know how we did. </p>
+		
+			
+			<form id = "survey-form">
 	
 	<!--Personal Information-->
-		<div id = "contact">
-			<label for = "name" id = "name-label">Name:</label>
-				<input type = "text" placeholder = "Enter your name here." id = "name" required>
+				<div id = "contact">
+					<label for = "name" id = "name-label">Name:</label>
+						<input type = "text" placeholder = "Enter your name here." id = "name" required>
 		
-			<label for = "email" id = "email-label">Email:</label>
-				<input type = "email" placeholder = "Enter your email address." id = "email" required>
+					<label for = "email" id = "email-label">Email:</label>
+						<input type = "email" placeholder = "Enter your email address." id = "email" required>
 		
-			<label for = "number" id = "number-label">Age:</label>
-				<input type = "number" placeholder = "Age" id = "number" min =  "1" max = "99"> <br>
+					<label for = "number" id = "number-label">Age:</label>
+						<input type = "number" placeholder = "Age" id = "number" min =  "1" max = "99"> <br>
 		
 		<!--Time of visit-->
 		
-			<label for = "visit">When was your visit?</label>
-				<select name = "period" id = "dropdown">
-					<option value = "Today">Today</option>
-					<option value = "In the last 7 days">In the last 7 days</option>
-					<option value = "In the last 14 days">In the last 14 days</option>
-					<option value = "In the last 30 days">In the last 30 days</option>
-					<option value = "More than 30 days">More than 30 days ago</option>
-				</select>
-			
-		</div>
+					<label for = "visit">When was your visit?</label>
+						<select name = "period" id = "dropdown">
+							<option value = "Today">Today</option>
+							<option value = "In the last 7 days">In the last 7 days</option>
+							<option value = "In the last 14 days">In the last 14 days</option>
+							<option value = "In the last 30 days">In the last 30 days</option>
+							<option value = "More than 30 days">More than 30 days ago</option>
+						</select>
+				</div>
 			<!--radio buttons for improvements-->
 			
-		<div>
+				<div>
 			
-			<label for ="Food" id = "Food-label">What would you like to see improved? <br>
-				<input id = "Food" value = "Food" type = "radio" name = "Dislikes">Food</label>
+					<label for ="Food" id = "Food-label">What would you like to see improved? <br>
+						<input id = "Food" value = "Food" type = "radio" name = "Dislikes">Food</label>
 			
-			<label for = "Service" id = "Service-label">
-				<input id = "Service" value = "Service" type = "radio" name = "Dislikes">Service</label>
+					<label for = "Service" id = "Service-label">
+						<input id = "Service" value = "Service" type = "radio" name = "Dislikes">Service</label>
 			
-			<label for = "Both" id = "Both-label">
-				<input id = "Both" value = "Both" type = "radio" name = "Dislikes">Both</label>
+					<label for = "Both" id = "Both-label">
+						<input id = "Both" value = "Both" type = "radio" name = "Dislikes">Both</label>
 			
-			<label for = "Neither" id = "Neither-label">
-				<input id = "Neither" value = "Neither" type = "radio" name = "Dislikes">Everything was great!</label>
-				<br>
+					<label for = "Neither" id = "Neither-label">
+						<input id = "Neither" value = "Neither" type = "radio" name = "Dislikes">Everything was great!</label>
+					<br>
 				
-			<label for = "feedback" id = "text-label">Additional Comments:</label><br>
-				<textarea id = "feedback" placeholder = "Please provide additional feedback here."></textarea>
+					<label for = "feedback" id = "text-label">Additional Comments:</label><br>
+						<textarea id = "feedback" placeholder = "Please provide additional feedback here."></textarea>
 			
-		</div>
+				</div>
 		<!--marketing tracker-->
 		
-		<div id = "marketing-tracker">
+				<div id = "marketing-tracker">
 		
-			<label for "Facebook" id = "Facebook-label">In the last 30 days, how have you heard about us? Select all that apply: <br>
-				<input id = "Facebook" value = "Facebook" type = "checkbox" name = "Marketing">Facebook</label>
+					<label for "Facebook" id = "Facebook-label">In the last 30 days, how have you heard about us? Select all that apply: <br>
+						<input id = "Facebook" value = "Facebook" type = "checkbox" name = "Marketing">Facebook</label>
 				
-			<label for "Instagram" id = "Instagram-label">
-				<input id = "Instagram" value = "Instagram" type = "checkbox" name = "Marketing">Instagram</label>
+					<label for "Instagram" id = "Instagram-label">
+						<input id = "Instagram" value = "Instagram" type = "checkbox" name = "Marketing">Instagram</label>
 				
-			<label for "Personal" id = "Personal-label">
-				<input id = "Personal" value = "Personal Recommendation" type = "checkbox" name = "Marketing">Personal Recommendation</label>
-			
-		</div>
+					<label for "Personal" id = "Personal-label">
+						<input id = "Personal" value = "Personal Recommendation" type = "checkbox" name = "Marketing">Personal Recommendation</label>
+				</div>
 		
 		<!--Recommendation-->
 		
-		<div id = "marketing-tracker2">
-			<label for = "Likely" id = "Likely-label">How likely are you to recommend us to someone else? <br>
-				<input id = "Likely" value = "Likely" type = "radio" name = "Future">Likely</label><br>
+				<div id = "marketing-tracker2">
+					<label for = "Likely" id = "Likely-label">How likely are you to recommend us to someone else? <br>
+							<input id = "Likely" value = "Likely" type = "radio" name = "Future">Likely</label><br>
 				
-			<label for = "Unlikely" id = "Unlikely-label">
-				<input id = "Unlikely" value = "Not Likely" type = "radio" name = "Future">Not Likely</label>
-		</div>
+					<label for = "Unlikely" id = "Unlikely-label">
+							<input id = "Unlikely" value = "Not Likely" type = "radio" name = "Future">Not Likely</label>
+				</div>
 		
-			<button type = "submit" id="submit">Submit Feedback</button>
-		</form>
-		
-	</main>
+				<button type = "submit" id="submit">Submit Feedback</button>
+			</form>
+		</main>
+	</body>
 </html>
